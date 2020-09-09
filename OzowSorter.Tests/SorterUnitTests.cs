@@ -31,5 +31,20 @@ namespace OzowSorter.Tests
             Assert.Equal(expected, actual);
         }
 
+        [Fact]
+        public void GivenAnArbitraryString_ShouldSortInAlphabeticalOrder()
+        {
+            var input = "contrarytopopularbeliefthepinkunicornflieseast";
+
+            var expected = "aaabcceeeeeffhiiiiklllnnnnooooppprrrrssttttuuy";
+
+            var actual = input.ToSorted();
+
+
+            Assert.Equal(expected, actual);
+        }
+
+
+
     }
 }
