@@ -22,6 +22,8 @@ public static class StringSorter
 
     public static string ToSorted(this string input)
     {
+        Guard.Against.NullOrEmpty(input, nameof(input));
+
         byte[] ascii = Encoding.ASCII.GetBytes(input);
 
         // I could use OrderBy here but it just felt like cheating.

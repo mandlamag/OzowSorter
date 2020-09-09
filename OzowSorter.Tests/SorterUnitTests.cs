@@ -82,6 +82,18 @@ namespace OzowSorter.Tests
         }
 
         [Fact]
+        public void ToSorted_GivenEmptyInput_ShouldThrowAnArgumentException()
+        {
+            string input = "";
+
+
+            Action act = () => input.ToSorted();
+
+
+            Assert.Throws<ArgumentException>(act);
+        }
+
+        [Fact]
         public void TrimAndSort_GivenNullInput_ShouldThrowAnArgumentNullException()
         {
             string input = null;
@@ -94,7 +106,7 @@ namespace OzowSorter.Tests
         }
 
         [Fact]
-        public void TrimAndSort_GivenEmptyInput_ShouldThrowAnArgumentNullException()
+        public void TrimAndSort_GivenEmptyInput_ShouldThrowAnArgumentException()
         {
             string input = "";
 
