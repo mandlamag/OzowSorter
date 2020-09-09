@@ -18,5 +18,18 @@ namespace OzowSorter.Tests
             Assert.Equal(expected, actual);
         }
 
+        [Fact]
+        public void GivenAnArbitraryString_ShouldIgnoreAllPanctuation()
+        {
+            var input = "Contrary to popular belief, the pink unicorn flies east.";
+
+            var expected = "Contrarytopopularbeliefthepinkunicornflieseast";
+
+            var actual = input.RemoveWhiteSpacesAndPunctuation();
+
+
+            Assert.Equal(expected, actual);
+        }
+
     }
 }
