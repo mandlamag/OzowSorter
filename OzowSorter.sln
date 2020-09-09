@@ -8,6 +8,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		READMe.md = READMe.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OzowSorter.Tests", "OzowSorter.Tests\OzowSorter.Tests.csproj", "{A73958A7-A6F2-4DD5-AE3E-AA24BC9F7C24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{16D20682-5DE0-4E31-B01A-A00C2CDF2994}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16D20682-5DE0-4E31-B01A-A00C2CDF2994}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16D20682-5DE0-4E31-B01A-A00C2CDF2994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73958A7-A6F2-4DD5-AE3E-AA24BC9F7C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73958A7-A6F2-4DD5-AE3E-AA24BC9F7C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73958A7-A6F2-4DD5-AE3E-AA24BC9F7C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73958A7-A6F2-4DD5-AE3E-AA24BC9F7C24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
