@@ -6,7 +6,7 @@ using Ardalis.GuardClauses;
 public static class StringSorter
 {
 
-    // i could probably just call the individual functions
+    // i could just call the individual functions instead of this
     public static string TrimAndSort(this string input)
     {
         Guard.Against.NullOrEmpty(input, nameof(input));

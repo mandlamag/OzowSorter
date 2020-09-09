@@ -15,14 +15,7 @@ The project was built in a TDD fashion. Unit tests were used to drive the design
 
 
 ## Requirements to Build Project
-
-```python
-import foobar
-
-foobar.pluralize('word') # returns 'words'
-foobar.pluralize('goose') # returns 'geese'
-foobar.singularize('phenomena') # returns 'phenomenon'
-```
+Visual Studio 
 
 
 ## License
