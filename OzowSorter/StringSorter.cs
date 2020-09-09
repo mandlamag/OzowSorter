@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Text.RegularExpressions;
+using Ardalis.GuardClauses;
 
 public static class StringSorter
 {
@@ -8,6 +9,7 @@ public static class StringSorter
     // i could probably just call the individual functions
     public static string TrimAndSort(this string input)
     {
+        Guard.Against.NullOrEmpty(input, nameof(input));
 
         return input.RemoveWhiteSpacesAndPunctuation().ToLower().ToSorted();
 

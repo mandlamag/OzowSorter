@@ -93,7 +93,17 @@ namespace OzowSorter.Tests
             Assert.Throws<ArgumentNullException>(act);
         }
 
+        [Fact]
+        public void TrimAndSort_GivenEmptyInput_ShouldThrowAnArgumentNullException()
+        {
+            string input = "";
 
+
+            Action act = () => input.TrimAndSort();
+
+
+            Assert.Throws<ArgumentException>(act);
+        }
 
 
 
