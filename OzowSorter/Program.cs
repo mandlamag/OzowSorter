@@ -6,7 +6,10 @@ namespace OzowSorter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(">  Please enter arbitrary string: ");
+            var input = Console.ReadLine();
+
+            Console.WriteLine($">  sorted output is: {input.TrimAndSort()}");
         }
     }
 }
