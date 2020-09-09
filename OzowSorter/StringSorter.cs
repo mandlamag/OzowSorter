@@ -17,7 +17,9 @@ public static class StringSorter
 
     public static string RemoveWhiteSpacesAndPunctuation(this string input)
     {
-        return Regex.Replace(input, @"[^\w]", String.Empty);
+        Guard.Against.NullOrEmpty(input, nameof(input));
+        
+        return Regex.Replace(input, @"[^\w]", string.Empty);
     }
 
     public static string ToSorted(this string input)
@@ -35,6 +37,7 @@ public static class StringSorter
         {
             results += char.ConvertFromUtf32(c);
         }
+
         return results;
     }
 
