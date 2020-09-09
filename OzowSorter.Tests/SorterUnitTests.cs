@@ -70,6 +70,17 @@ namespace OzowSorter.Tests
         }
 
         [Fact]
+        public void RemoveWhiteSpacesAndPunctuation_GivenEmptyInput_ShouldThrowAnArgumentException()
+        {
+            string input = "";
+
+
+            Action act = () => input.RemoveWhiteSpacesAndPunctuation();
+
+
+            Assert.Throws<ArgumentException>(act);
+        }
+        [Fact]
         public void ToSorted_GivenNullInput_ShouldThrowAnArgumentNullException()
         {
             string input = null;
