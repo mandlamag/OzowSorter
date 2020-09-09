@@ -4,6 +4,15 @@ using System.Text.RegularExpressions;
 
 public static class StringSorter
 {
+
+    // i could probably just call the individual functions
+    public static string TrimAndSort(this string input)
+    {
+
+        return input.RemoveWhiteSpacesAndPunctuation().ToLower().ToSorted();
+
+    }
+
     public static string RemoveWhiteSpacesAndPunctuation(this string input)
     {
         return Regex.Replace(input, @"[^\w]", String.Empty);
@@ -13,7 +22,7 @@ public static class StringSorter
     {
         byte[] ascii = Encoding.ASCII.GetBytes(input);
 
-        //could use OrderBy here but it felt like cheating.
+        // I could use OrderBy here but it just felt like cheating.
         var sorted = SortBytesAscending(ascii);
 
         var results = string.Empty;

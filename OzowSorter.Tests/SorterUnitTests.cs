@@ -44,6 +44,57 @@ namespace OzowSorter.Tests
             Assert.Equal(expected, actual);
         }
 
+        [Fact]
+        public void GivenAnArbitraryString_ShouldRemoveSpacesAndSortInAlphabeticalOrder()
+        {
+            var input = "Contrary? to #popular! belief, the pink unicorn flies east.";
+
+            var expected = "aaabcceeeeeffhiiiiklllnnnnooooppprrrrssttttuuy";
+
+            var actual = input.TrimAndSort();
+
+
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void RemoveWhiteSpacesAndPunctuation_GivenNullInput_ShouldThrowAnArgumentNullException()
+        {
+            string input = null;
+
+
+            Action act = () => input.RemoveWhiteSpacesAndPunctuation();
+
+
+            Assert.Throws<ArgumentNullException>(act);
+        }
+
+        [Fact]
+        public void ToSorted_GivenNullInput_ShouldThrowAnArgumentNullException()
+        {
+            string input = null;
+
+
+            Action act = () => input.ToSorted();
+
+
+            Assert.Throws<ArgumentNullException>(act);
+        }
+
+        [Fact]
+        public void TrimAndSort_GivenNullInput_ShouldThrowAnArgumentNullException()
+        {
+            string input = null;
+
+
+            Action act = () => input.TrimAndSort();
+
+
+            Assert.Throws<ArgumentNullException>(act);
+        }
+
+
+
 
 
     }
