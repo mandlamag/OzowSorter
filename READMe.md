@@ -1,8 +1,7 @@
 ﻿# OzowSorter
 
-Foobar is a C# console program that takes any arbitrary piece of text as input, and returns as
-output a sorted list of letters. Punctuation should be ignored, and uppercase
-letters should be mapped to lowercase..
+Ozow is a Test Driven Development (TDD) C# implementation of  simple String sorter. This console program takes any arbitrary piece of text as input, and returns as output a sorted list of letters. Punctuation is ignored, and uppercase
+letters are mapped to lowercase.
 
 ### Example
 ```bash
@@ -10,12 +9,9 @@ input: Contrary to popular belief, the pink unicorn flies east.
 output: aaabcceeeeeffhiiiiklllnnnnooooppprrrrssttttuuy
 ```
 
-## Approach
-The project was built in a TDD fashion. Unit tests were used to drive the design. 
-
-
 ## Requirements to Build Project
-Visual Studio 
+Visual Studio 2017 - 2019
+.Net Core 3.0
 
 
 ## License
